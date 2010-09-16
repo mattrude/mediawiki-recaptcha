@@ -483,7 +483,7 @@ class SimpleCaptcha {
 	 * @param string $section
 	 * @param bool true to continue saving, false to abort and show a captcha form
 	 */
-	function confirmEdit( &$editPage, $newtext, $section ) {
+	function confirmEdit( $editPage, $newtext, $section ) {
 		if( $this->shouldCheck( $editPage, $newtext, $section ) ) {
 			if( $this->passCaptcha() ) {
 				return true;
